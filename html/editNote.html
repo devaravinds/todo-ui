@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Edit Note</title>
+	<link rel="stylesheet" type="text/css" href="/static/editNote.css">
+</head>
+<body>
+	<h1 class="noteHeader" onclick="window.location.href='/dashboard'">Todo-List</h1>
+	<form method="post" class = 'form'>
+		<label for="Title" class="inputLabel">Title:</label>
+		<input type="text" name="Title" value="{{.Title}}" required class="titleInput">
+		<br>
+		<label for="Content" class="inputLabel">Content:</label>
+		<textarea name="Content" required class="contentInput">{{.Content}}</textarea>
+		<br>
+		<button type="submit" class="submitButton">Submit</button>
+	</form>
+</body>
+</html>

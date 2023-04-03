@@ -1,0 +1,66 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+}
+
+.noteHeader {
+  font-size: 2em;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.form {
+  width: 400px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+}
+
+.inputLabel {
+  display: block;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.inputField {
+width: 100%;
+font-size: 16px;
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 5px;
+margin-bottom: 20px;
+}
+
+.submitButton[type="submit"] {
+  background-color: #4CAF50;
+  color: #fff;
+  font-size: 18px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+.submitButton[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+.signupButton {
+  background-color: #4CAF50;
+  color: #ffffff;
+  font-size: 18px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.errorMessage {
+  color: red;
+  text-align: center;
+}
+

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign up</title>
+	<link rel="stylesheet" type="text/css" href="/static/signup.css">
+</head>
+<body>
+	<h1 class="noteHeader">Todo-List</h1>
+	{{if .Error}}
+		<div class="errorMessage">{{.Error}}</div>
+	{{end}}
+	<form method="post" class = 'form'>
+        <label for="First Name" class="inputLabel">First Name:</label>
+		<input type="text" name="First Name" required class="inputField">
+		<br>
+        <label for="Last Name" class="inputLabel">Last Name:</label>
+		<input type="text" name="Last Name" required class="inputField">
+		<br>
+		<label for="Email" class="inputLabel">Email:</label>
+		<input type="text" name="Email" required class="inputField">
+		<br>
+		<label for="Password" class="inputLabel">Password:</label>
+		<input type="password" name="Password" required class="inputField">
+		<br>
+		<button type="submit" class="submitButton">Signup</button>
+		<button type="button" class="signupButton" onclick="window.location.href='/login'">Login</button>
+	</form>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Dashboard</title>
+	<link rel="stylesheet" type="text/css" href="/static/dashboard.css">
+</head>
+<body>
+    <h1 class="noteHeader" onclick="window.location.href='/dashboard'">Todo-List</h1>
+    <button class="buttonStyle" onclick="window.location.href='/createNote'">Create</button>
+    <button class="logOutButton" onclick="window.location.href='/logout'">Logout</button>
+    {{range .Notes}}
+      <div class="noteDiv">
+        <h2 class="noteTitle">{{.Title}}</h2>
+        <p class="noteContent">{{.Content}}</p>
+        <button class = "buttonStyle" onclick="window.location.href='/renderEditNote?id={{.ID}}'" >Edit</button>
+        <button class = "logOutButton" onclick="window.location.href='/deleteNote?id={{.ID}}'" >Delete</button>
+      </div>
+    {{end}}
+</body>
+</html>

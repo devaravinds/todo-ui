@@ -1,0 +1,92 @@
+/* Background image and overlay */
+body {
+    background-image: url("/static/background.jpg");
+    background-size: cover;
+    background-position: center center;
+    font-family: 'Lucida Sans';
+  }
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.4) 0%,rgba(0,0,0,0.4) 100%);
+    z-index: -1;
+  }
+  
+  /* Main Styles */
+  .noteHeader {
+    color: #140101;
+    font-size: 36px;
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .form {
+    background-color: #fff;
+    padding: 30px;
+    margin: 0 auto;
+    max-width: 400px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .inputLabel {
+    display: block;
+    color: #333;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .inputField {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+    transition: border-bottom-width 0.1s;
+
+  }
+  .inputField:focus {
+    outline: none;
+    border-bottom-width: 2px;
+  }
+
+  
+  .submitButton {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-right: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .signupButton {
+    background-color: #f2f2f2;
+    border: none;
+    color: #333;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .errorMessage {
+    color: #f00;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
